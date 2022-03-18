@@ -4,7 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
     <title>Rate our service!</title>
   </head>
-  <body></body>
+  <body>
+    <main class="main">
+      <div class="rating wrapper">
+        <div class="review__header">
+          <img
+            class="review__header-img"
+            src="./assets/images/icon-star.svg"
+            alt=""
+          />
+        </div>
+        <div class="review__info">
+          <h1 class="title">How did we do?</h1>
+          <p class="text">
+            Please let us know how wi did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="review__rating">
+          <button class="review__rating-btn" data-rating="1">1</button>
+          <button class="review__rating-btn" data-rating="2">2</button>
+          <button class="review__rating-btn" data-rating="3">3</button>
+          <button class="review__rating-btn" data-rating="4">4</button>
+          <button class="review__rating-btn" data-rating="5">5</button>
+        </div>
+        <button class="review__submit-btn">Submit</button>
+      </div>
+      <div class="modal wrapper hidden">
+        <div class="modal__img">
+          <img src="./assets/images/illustration-thank-you.svg" alt="" />
+        </div>
+        <div class="modal__rating">
+          <p class="modal__rating-number"></p>
+        </div>
+        <div class="modal__info">
+          <h1 class="title">Thank you!</h1>
+          <p class="text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="./src/app.js"></script>
+  </body>
 </html>
